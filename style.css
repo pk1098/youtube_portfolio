@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-title{
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cta{
+	display: inline-block;
+	padding: 10px 30px;
+	color:crimson;
+	background-color: transparent;
+	border: 2px solid crimson;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-top: 30px;
+	letter-spacing: .1rem;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+
+.cta:hover{
+	color:white;
+	background-color: crimson;
+}
+
+/*Hero Section*/
+#hero{
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-image: url('https://raw.githubusercontent.com/WebCifar/one-page-website-html-css-project-for-practice/master/img/hero-bg.png');
+}
+
+#hero .hero{
+	max-width:1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+
+#hero h1{
+	display: block;
+	font-size: 4rem;
+	color: black;
+	position: relative;
+	width:fit-content;
+}
+
+.brand h1{
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+
+
+/* End of Hero Section*/
+
+/*services section strat*/
+
+#services .services{
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin:0 auto;
+	padding: 100px 0;
+}
+
+
+#services .service-top{
+	margin-bottom: 50px;
+}
+#services .service-top p{
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.5rem;
+}
+#services .service-bottom{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#services .service-item{
+	flex-basis: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 10px 5%;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url('https://raw.githubusercontent.com/WebCifar/one-page-website-html-css-project-for-practice/master/img/img-1.png');
+	background-size:cover;
+}
+#services .service-item h2{
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .service-item p{
+	text-align: left;
+	font-size: 1.4rem;
+	line-height: 1.9rem
+}
+/*services section end*/
+
+/*Projects Section*/
+#projects .projects{
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header{
+	margin-bottom: 50px;
+}
+#projects .all-projects{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px;
+}
+#projects .project-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width:80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info{
+	padding: 30px;
+	flex-basis: 50%;
+	background-color: #8fd3f4;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-info h1{
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2{
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-img{
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+}
+/*end of project section*/
+
+/*start of about section*/
+#About .About{
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#About .col-left{
+	width: 250px;
+	height: 360px;
+}
+#About .col-right{
+
+}
+#About .col-right h2{
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+#About .col-right p{
+	margin-bottom: 20px;
+}
+#About .col-right .cta{
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+/*End of about section*/
+/*Contact section begins*/
+#contact .contact{
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#contact .contact-items{
+	width: 400px;
+}
+#contact .contact-item{
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	margin: 30px;
+	flex-direction: column;
+}
+#contact .icon{
+	margin-bottom: 10px;
+}
+#contact .contact-info h1{
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2{
+	font-size: 1.3rem;
+	font-weight: 500;
+	line-height: 2rem;
+}
+/*contact section ends*/
+/*Footer section begins*/
+#footer{
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2{
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon{
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item{
+	height: 50px;
+	width:50px;
+	margin:0 5px;
+}
+#footer p{
+	color:white;
+}
+/*Footer section ends*/
+
+/*media query for tablet*/
+@media only screen and (min-width:768px){
+	.cta{
+		font-size: 2.5rem;
+		padding:20px 60px;
+	}
+	h1.section-title{
+		font-size: 6rem;
+	}
+	/*hero*/
+	#hero h1{
+		font-size: 7rem;
+	}
+	/*end of hero*/
+
+	/*Serive Section*/
+	#services .service-item{
+		flex-basis:   45%;
+		margin: 2.5%;
+	}
+	/*End of service section*/
+
+	/*Project*/
+	#projects .project-item{
+		flex-direction: row;
+		height : 400px;
+		margin: 0;
+		width: 100%;
+		border-radius:0; 
+	}
+	#projects .project-item:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	#projects .project-item .project-info{
+		height: 100%;
+	}
+	#projects .project-item .project-img{
+		height: 100%;
+	}
+	/*Project Ends*/
+	/*About*/
+	#About .About{
+		flex-direction: row;
+	}
+	#About .col-left{
+		width:700px;
+		height: 250px;
+		padding-left: 60px;
+	}
+	#About .col-right{
+		padding-left: 30px;
+		text-align: left;
+	}
+	#About .col-right h1{
+		text-align: left;
+	}
+	/*Emd About*/
+	#contact .contact{
+		flex-direction: column;
+		padding:100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width:20vh;
+	}
+	#contact .contact-items{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	#contact .contact-item{
+	}
+}
+/*media query for tablet ends*/
