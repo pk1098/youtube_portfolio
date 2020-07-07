@@ -1,0 +1,19 @@
+{
+  "name": "youtube_web_practice",
+  "version": "1.0.0",
+  "description": "This is a test directory to learn git and node",
+  "main": "index2.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pk1098/youtube_portfolio.git"
+  },
+  "author": "Prashant Kalyani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pk1098/youtube_portfolio/issues"
+  },
+  "homepage": "https://github.com/pk1098/youtube_portfolio#readme"
+}
